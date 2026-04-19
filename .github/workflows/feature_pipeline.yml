@@ -2,8 +2,11 @@ name: Feature Pipeline — Every Hour
 
 on:
   schedule:
-    - cron: "0 * * * *"   # runs at the top of every hour
-  workflow_dispatch:       # lets you run it manually too
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   fetch-aqi:
@@ -12,6 +15,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -22,8 +27,6 @@ jobs:
         run: pip install requests pandas numpy
 
       - name: Run feature pipeline
-        env:
-          AQI_TOKEN: ${{ secrets.AQI_TOKEN }}
         run: python feature_pipeline.py
 
       - name: Commit and push updated CSV
