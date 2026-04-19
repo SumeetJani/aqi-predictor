@@ -1,0 +1,6 @@
+timestamp,city,aqi,aqi_category,pm25,pm10,o3,no2,so2,co,temperature,humidity,wind_speed,hour,day_of_week,month,is_weekend
+2026-04-17 01:12:10,karachi,161,Unhealthy,161,,,,,,31.0,3.0,5.1,1,4,4,0
+2026-04-17 01:13:09,karachi,161,Unhealthy,161,,,,,,31.0,3.0,5.1,1,4,4,0
+2026-04-17 01:37:09,islamabad,154,Unhealthy,154,,,,,,12.0,48.6,2.0,1,4,4,0
+2026-04-17 01:37:42,new york,61,Moderate,61,,,,,,30.5,63.0,3.5,1,4,4,0
+2026-04-17 01:38:33,karachi,161,Unhealthy,161,,,,,,31.0,3.0,5.1,1,4,4,0

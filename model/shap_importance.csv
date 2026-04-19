@@ -1,0 +1,15 @@
+feature,importance
+temperature,3.1033525
+day_of_year,3.0414572
+aqi_rolling_3d,2.795706
+aqi,2.3037078
+day_of_week,1.4623989
+humidity,1.1521021
+aqi_change,1.0788732
+wind_speed,0.893636
+pm25,0.66365266
+aqi_rolling_7d,0.5779264
+aqi_change_pct,0.28436735
+month,0.14303146
+hour,0.0
+is_weekend,0.0
